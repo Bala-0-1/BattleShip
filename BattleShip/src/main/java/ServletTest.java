@@ -25,7 +25,6 @@ public class ServletTest extends HttpServlet {
         String str = "hello";
         jsonData.put(str, str);
 
-        // Read the JSON data from the request's input stream
         StringBuilder requestBody = new StringBuilder();
         BufferedReader reader = request.getReader();
         String line;
@@ -33,19 +32,16 @@ public class ServletTest extends HttpServlet {
             requestBody.append(line);
         }
 
-        // Print the received JSON data
         System.out.println("(GET) Received JSON data: " + requestBody.toString());
 
-        // Set content type and character encoding
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
 
-        // Send the response data
         response.getWriter().write(jsonData.toString());
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        // Read the JSON data from the request's input stream
+
         StringBuilder requestBody = new StringBuilder();
         BufferedReader reader = request.getReader();
         String line;
@@ -53,15 +49,13 @@ public class ServletTest extends HttpServlet {
             requestBody.append(line);
         }
 
-        // Print the received JSON data
+
         System.out.println("Received JSON data: " + requestBody.toString());
         String responseData = "200";
 
-        // Set content type and character encoding
         response.setContentType("text/plain");
         response.setCharacterEncoding("UTF-8");
 
-        // Send the response data
         response.getWriter().write(responseData);
     }
 }
