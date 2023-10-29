@@ -16,5 +16,10 @@
 	<classpathentry kind="lib" path="/Users/balakumaranb/Downloads/json-simple-1.1.1.jar"/>
 	<classpathentry kind="lib" path="/Users/balakumaranb/eclipse_workspace/apache-tomcat-10.1.12/lib/servlet-api.jar"/>
 	<classpathentry kind="lib" path="/Users/balakumaranb/Downloads/gson-2.8.2.jar"/>
+	<classpathentry kind="lib" path="/home/mahalakshmi/mysql-connector-java-8.0.11.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
